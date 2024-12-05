@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <aside class="sbar">
+            <div class="logo">
+                <img class="tk" src="tc.jpg" alt="tc">
+            </div>
+            <ul class="patlis">
+                <li>
+                    <img src="em.png" alt="Emily Williams"> 
+                    <div class="patinfo">
+                        <span class="name">Emily Williams</span>
+                        <span class="details">Female, 18</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="ryan.png" alt="Ryan Johnson"> 
+                    <div class="patinfo">
+                        <span class="name">Ryan Johnson</span>
+                        <span class="details">Male, 45</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="brandon.png" alt="Brandon Mitchell"> 
+                    <div class="patinfo">
+                        <span class="name">Brandon Mitchell</span>
+                        <span class="details">Male, 36</span>
+                    </div>
+                </li>
+                <li class="selected">
+                    <img src="JesicaTaylor.jpeg" alt="Jessica Taylor"> 
+                    <div class="patinfo">
+                        <span class="name">Jessica Taylor</span>
+                        <span class="details">Female, 28</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="sam.png" alt="Samantha Johnson"> 
+                    <div class="patinfo">
+                        <span class="name">Samantha Johnson</span>
+                        <span class="details">Male, 56</span>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+
+        <main class="main-content">
+            <header class="header">
+                <nav>
+                    <a href="#"><img class="nav-icon" src="overview.png" alt="Overview Icon"> Overview</a>
+                    <a href="#" class="active"><img class="nav-icon" src="pt.png" alt="Patients Icon"> Patients</a>
+                    <a href="#"><img class="nav-icon" src="sc.png" alt="Schedule Icon"> Schedule</a>
+                    <a href="#"><img class="nav-icon" src="mes.png" alt="Message Icon"> Message</a>
+                    <a href="#"><img class="nav-icon" src="tr.png" alt="Transactions Icon"> Transactions</a>
+                </nav>
+            </header>
+
+            <section class="diagnosis-history">
+                <h2>Diagnosis History</h2>
+                <canvas id="bloodPressureChart"></canvas>
+                
+                <div class="diagnostic-cards">
+                    <div class="card respiratory-card">
+                        <img  src="rs.png" alt="Respiratory Icon">
+                        <h3 class="l">Respiratory Rate</h3>
+                        
+                        <p class="t">20 bpm</p>
+                        <span class="status normal">Normal</span>
+                    </div>
+                    <div class="card temperature-card">
+                        <img  src="th.png" alt="Thermometer">
+                        <h3 class="l"> Temperature</h3>
+                        
+                        <p class="t">98.6°F</p>
+                        <span class="status normal">Normal</span>
+                    </div>
+                    <div class="card heart-rate-card">
+                        <img src="hr.png" alt="Heart Icon">
+                        <h3 class="l">Heart Rate</h3>
+                        
+                        <p class="t">78 bpm</p>
+                        <span class="status low">Lower than Average</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="patient-details">
+
+            <div class="doctor-info-box">
+                <img src="DR.jpeg" alt="Dr. Jose Simmons" class="doctor-photo">
+                <h3>Dr. Jose Simmons</h3>
+            </div>
+
+            <img src="JesicaTaylor.jpeg" alt="Jessica Taylor" class="patient-photo">
+            <h3>Jessica Taylor</h3>
+            <p><img class="icon" src="calr.png" alt="DOB Icon"> <strong>Date of Birth:</strong>August 23, 1996 </p>
+            <p><img class="icon" src="fg.png" alt="Gender Icon"> <strong>Gender:</strong> Female</p>
+            <p><img class="icon" src="ph.png" alt="Contact Icon"> <strong>Contact Info:</strong> (415) 555-1234</p>
+            <p><img class="icon" src="eg.png" alt="Emergency Icon"> <strong>Emergency Contact:</strong> (415) 555-5678</p>
+            <p><img class="icon" src="ins.png" alt="Insurance Icon"> <strong>Insurance Provider:</strong> Sunrise Health Assurance</p>
+            <button class="notification-btn">Show All Notifications</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fc;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sbar {
+    width: 20%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sbar .logo h2 {
+    font-size: 1.5em;
+    color: #00c4cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.patlis {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.patlis li {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.patlis li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.patlis li:hover {
+    background-color: #f0f4ff;
+}
+
+.patlis li.selected {
+    background-color: #e6f4ff;
+    font-weight: bold;
+}
+
+.main-content {
+    width: 60%;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header nav a.active {
+    background-color: #d8eafd; /* Light blue */
+    color: #0044cc; /* Dark blue text */
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.diagnosis-history {
+    margin-top: 20px;
+}
+
+.diagnostic-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%;
+    background: pink;
+    padding: 30px 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+
+.card .status {
+    margin-top: 10px;
+    
+    
+}
+
+.status.normal {
+    margin: 10px;
+    font-weight: 100;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.status.low {
+    font-weight: 100;
+    margin: 10px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.patient-details {
+    width: 20%;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.patient-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.patient-details .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.patient-details .info {
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+.respiratory-card img,
+.temperature-card img,
+.heart-rate-card img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50 px;
+}
+.t{
+    font-style: italic;
+    font-weight: bolder;
+    margin: 10px;
+    
+}
+
+.l{
+    font-weight: normal;
+    font-size: smaller;
+    margin: 10px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.notification-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.notification-btn:hover {
+    background-color: #4f5bca;
+}
+
+
+.graph-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.graph-labels .systolic {
+    color: #ff6f61;
+}
+
+.graph-labels .diastolic {
+    color: #6c7ae0;
+}
+
+.patient-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.patient-details .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+
+}
+.tk{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+.doctor-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doctor-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.doctor-profile h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.patient-details {
+    width: 20%;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.patient-details .patient-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.patient-details h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.patient-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.patient-details .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.doctor-info-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    
+    color: black;
+}
+
+.doctor-info-box .doctor-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.doctor-info-box h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+
+.patient-details {
+    width: 20%;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.patient-details .patient-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.patient-details h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.patient-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.patient-details .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; 
+    }
+    .sbar {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .diagnostic-cards .card {
+        flex: 1 1 100%; 
+    }
+    .header nav a {
+        font-size: 0.8em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header nav a {
+        font-size: 0.7em;
+        padding: 5px; 
+    }
+    .card {
+        padding: 8px;
+    }
+    .patient-details {
+        padding: 10px;
+    }
+}
